@@ -6,7 +6,7 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-var routes = require('./api/routers/counter_rounter.js');
+var routes = require('./api/routes/counter_route.js');
 routes(app);
 
 app.listen(port);
